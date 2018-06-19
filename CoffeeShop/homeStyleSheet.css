@@ -1,0 +1,57 @@
+﻿.container{
+    display:grid;
+    max-width:1200px;
+    width:95%;
+    grid-template-columns:repeat(12,1fr);
+    grid-template-rows:repeat(27,25px);
+    margin:2rem auto;
+}
+h1{
+    grid-column:1/span 12;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+}
+.store-exterior {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/span 12;
+    grid-row: span 12;
+    background-image: url('background.jpg');
+    background-size: cover;
+    justify-content: center;
+    text-align:center;
+}
+body {
+    background: radial-gradient(rgb(177, 117, 74),rgb(245, 142, 56),rgb(49, 14, 0));
+}
+nav ul{
+    background-color:rgb(7, 8, 26);
+    color:rgb(87, 110, 198);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display:flex;
+    list-style:none;
+    margin:0;
+    flex-wrap:wrap;
+}
+nav{
+    grid-column:span 12;
+}
+nav ul li{
+    flex-basis:10%;
+}
+.cards {
+    background-color: rgb(7, 8, 26);
+    width:30%;
+}
+.cardholder {
+    grid-column: span 12;
+    grid-row: 16/span 13;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration:none;
+}
+a hover {
+    color: rgb(87, 110, 198);
+}
